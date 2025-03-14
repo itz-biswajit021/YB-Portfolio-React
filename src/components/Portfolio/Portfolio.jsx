@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
+import jarvis from "../../img/JarvisAI.png";
+import paint from "../../img/paint program.jpg";
+import uber from "../../img/uber design.jpg";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
@@ -24,16 +25,29 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <a href="https://github.com/your-username/sidebar-repo" target="_blank" rel="noopener noreferrer">
+            <img src={jarvis} alt="Jarvis Project" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <a href="https://github.com/itz-biswajit021/GesturePainting.git" target="_blank" rel="noopener noreferrer">
+            <img src={paint} alt="Paint Project" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <a href="https://www.figma.com/design/tykJxE8Khe61tdR2jwkdvk/UBER_LandingPage?node-id=0-1&t=TJcYo0tHasT0sMAX-1" target="_blank" rel="noopener noreferrer">
+            <img src={uber} alt="UBER design" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <a href="https://github.com/your-username/sidebar-repo" target="_blank" rel="noopener noreferrer">
+            <img src={MusicApp} alt="Paint Project" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://github.com/your-username/sidebar-repo" target="_blank" rel="noopener noreferrer">
+            <img src={HOC} alt="Paint Project" />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>

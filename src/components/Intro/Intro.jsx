@@ -27,11 +27,11 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
+          <span>Biswajit Mahapatra</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+          <b>UI/UX Designer</b> and <b>FrontEnd Developer</b> with expertise in web design, development, and <b>Python programming</b>,
+           delivering high-quality, user-friendly, and innovative digital solutions.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -39,9 +39,18 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+        <a href="https://github.com/itz-biswajit021" target="_blank" rel="noopener noreferrer">
+  <img src={Github} alt="GitHub" />
+</a>
+
+<a href="https://www.linkedin.com/in/biswajit-mahapatra-6231a8293/" target="_blank" rel="noopener noreferrer">
+  <img src={LinkedIn} alt="LinkedIn" />
+</a>
+
+<a href="https://www.instagram.com/_biswajit_mahapatra_/" target="_blank" rel="noopener noreferrer">
+  <img src={Instagram} alt="Instagram" />
+</a>
+
         </div>
       </div>
       {/* right image side */}
@@ -64,7 +73,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="PYTHON" text2="Developer" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +84,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="UI/UX" text2="Designer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
